@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <dl>
+        <dt class="mono">const p = document.getElementById('ola pedro');</dt>
+            <dd>Esse elemento é atribuído a variável p, sua função é ser uma referência para o elemento HTML que possui um id</dd>
+            <dt class="mono">p.innerHTML = 'ola pedro';</dt>
+            <dd>Esse elemento atribui valor a variável p</dd>
+            <dt class="mono">var elementos = document.getElementsByClassName('chocolate');</dt>
+            <dd>A função var é atribuir uma variável aos elementos, e como é uma classe vamos usar class e não id</dd>
+            <dt class="mono">for (var i = 0; i &lt; elementos.length; i++) {
+                elementos[i].style.color = "red";
+            }</dt>
+            <dd>Já o código acima serve para escolher a cor do texto</dd>
+            <dt class="mono">var novoParagrafo = document.createElement("p");</dt>
+            <dd>O código acima cria um parágrafo, um elemento p</dd>
+            <dt class="mono">novoParagrafo.textContent = "novoParagrafo";</dt>
+            <dd>O código acima, serve para colocar conteúdo no parágrafo</dd>
+            <dt class="mono">var container = document.getElementById("container");</dt>
+            <dd>Já esse serve para renderizar o id</dd>
+            <dt class="mono">container.appendChild(novoParagrafo);</dt>
+            <dd>Este código vai adicionar um parágrafo ao elemento existente</dd>
+            <dt class="mono">var excluir = document.getElementById("delete");</dt>
+            <dd>Esta função vai usar variável e vai renderizar o id, que é muito importante</dd>
+            <dt class="mono">if (excluir){
+                excluir.remove();
+            }</dt>
+            <dd>Esta parte vai servir para renderizar a exclusão do elemento</dd>
+            <dt class="mono">else{
+                console.log("Elemento não encontrado.");
+            }</dt>
+            <dd>Este código acima vai avisar caso o usuário procure o elemento excluído</dd>
+            <dt class="mono">var botão = document.getElementById('meubotão');</dt>
+            <dd>Esta linha de código serve para selecionar o id e a variável</dd>
+            <dt class="mono">var alvo = document.getElementById("alvo");</dt>
+            <dd>Este código faz a mesma coisa que o anterior</dd>
+            <dt class="mono">botão.addEventListener("click", function(){
+                alvo.style.backgroundColor = "yellow";
+            });</dt>
+            <dd>Todo esse código vai mexer na funcionalidade e na mudança de cor ao clicar no no botão</dd>
+            <dt class="mono">var elemento = document.getElementById('element');</dt>
+            <dd>Este código vai achar e renderizar o id que foi colocado no HTML</dd>
+            <dt class="mono">elemento.classList.add('minha-classe');</dt>
+            <dd>E este código vai renderizar e achar minha classe fei ta no CSS</dd>
+            <dt class="mono">var imagem = document.getElementById('minha-imagem');</dt>
+            <dd>Este código vai rederizar o id da imagem, com ajuda de uma variável chamada imagem</dd>
+            <dt class="mono">imagem.src = 'nova_imagem.jpg';</dt>
+            <dd>Aqui eu coloco a imagem que será substituta, com o endereço do link</dd>
+            <dt class="mono">var input = document.getElementById('meu-input');</dt>
+            <dd>Vai selecionar o id com ajuda da variável input</dd>
+            <dt class="mono">input.addEventListener('input', function(){
+                console.log(input.value);
+            });</dt>
+            <dd>Todo esse código vai renderizar a função de digitar em uma caixa, e tem um código para monitorar os valores quando são alterados</dd>
+            <dt class="mono">var strings = ["item 1", "item 2", "item 3"];</dt>
+            <dd>O código acima usa strings para criar itens na lista</dd>
+            <dt class="mono">var lista = document.getElementById('minha-lista');</dt>
+            <dd>Este código usa a variável lista para encontrar o id</dd>
+            <dt class="mono">strings.forEach(function(string){
+                var listItem = document.createElement('li');
+                listItem.textContent = string;
+                lista.appendChild(listItem);
+            });</dt>
+            <dd>A primeira linha cria os marcadores, a segunda cria o elemento li, e as duas últimas vão renderizar o resto</dd>
+            <dt class="mono">var elementos = document.querySelectorAll('.minha-classe');</dt>
+            <dd>O código acima vai selecionar todas as classes '.minha-classe', com querySelectorAll</dd>
+            <dt class="mono">elementos.forEach(function (elemento){
+                elemento.style.fontStyle = 'italic';
+            });
+            </dt>
+            <dd>E o resto vai deixar o texto em itálico, quando eu digitar mais no HTML será tudo em itálico</dd>
+            <dt class="mono">function alternarVisibilidade(elementID){
+                var elemento = document.getElementById(elementID);
+                if (elemento.style.display === "none"){
+                    elemento.style.display === "block"; //Se estava oculto torna visível
+                } else {
+                    elemento.style.display = "none"; // Se estava visível torna oculto
+                }
+            }</dt>
+            <dd>A primeira linha vai criar uma função para o id, a segunda vai selecioná-lo, e as últimas linas vão mexer na parte de ocultar e tornar visível novamente</dd>
+            <dt class="mono">var elementos = document.querySelectorAll('.minha-classe');</dt>
+            <dd>Vai selecionar todas as classes CSS com querySelectorAll</dd>
+            <dt class="mono">elementos.forEach(function(elemento){
+                elemento.textContent = 'Texto alterado'
+            })</dt>
+            <dd>Esse código vai criar uma função para elemento, e quando eu digitar qualquer coisa, vai aparecer no live preview</dd>
+            <dt class="mono">function adicionarNovoItem(texto){
+                var novoItem = document.createElement('li');
+                novoItem.textContent = texto;
+                var lista = document.getElementById('minha-lista');
+                lista.appendChild(novoItem);
+            }</dt>
+            <dd>A primeira linha vai criar a função ao botão, adicionar novo item que adicionamos no HTML, a segunda linha vai
+                renderizar a função de criar um elemento li, a terceira linha cria um texto, a quarta identifica o id e a quinta faz o botão funcionar corretamente
+            </dd>
+            <dt class="mono">var elemento = document.getElementById('meu-elemento');</dt>
+            <dd>Este código vai identificar a id</dd>
+            <dt class="mono">elemento.setAttribute('title', 'Este é um título');</dt>
+            <dd>Quando eu colocar o mouse em cima da palavra vai aparecer este é um título</dd>
+            <dt class="mono">function removerClasse(){
+                var elemento = document.getElementById('meu-elemento');
+                elemento.classList.remove('classe-a-remover');
+            }</dt>
+            <dd>Esta código vai criar uma função remover classe, identificar o id e fazer o botão funcionar, e remover a classe CSS</dd>
+            <dt class="mono">var elementos = document.querySelectorAll('minha-classe');
+                console.log("Número de elementos com a classe 'minha-classe':", elementos.length);
+                var paragrafo = document.getElementById('quantidade-elementos');
+                paragrafo.textContent = "Número de elementos com a classe 'minha-classe': 4", + elementos.length;</dt>
+                <dd>querySelectorAll vai selecionar todos as classes adicionadas, console vai exibir o número de elementos com a classe adicionada
+                    a terceira linha vai renderizar o id e na última vai realmmente mostrar os números, quantos elementos estão com tal classe
+                </dd>
+                <dt class="mono">window.onload = function(){
+                    var pai = document.getElementById("meuelementopai");
+                    var novoFilho = document.createElement("div");
+                    novoFilho.textContent = "Conteúdo adicionado";
+                    pai.appendChild(novoFilho);
+                }</dt>
+                <dd>A primeira linha vai criar uma função para renderizar o conteúdo do elemento filho, a segunda vai renderizar o id do elemento pai, 
+                    a terceira vai achar o id do elemento pai, a quarta vai adicionar conteúdo ao elemento filho e a quinta vai mesclar o elemento filho com o elemento pai
+                </dd>
+                <dt class="mono">window.onload = function(){
+                    var elementos = document.querySelectorAll(".minha-classe");
+                    elementos.forEach(function(elemento){
+                        elemento.style.fontSize = "60px";
+                    });
+                };</dt>
+                <dd>A primeira linha vai criar a função, a segunda vai selecionar todos os elementos com a respectiva classe, a terceira vai
+                    criar uma função para cada elemento selecionado no código, e a última linha vai mexer no tamanho da fonte dos elementos
+                </dd>
+                <dt class="mono">window.onload = function(){
+                    var elementtomove = document.getElementById("elementtomove");
+                    var novoPai = document.getElementById("novoPai");
+                    novoPai.appendChild(elementtomove);
+                }</dt>
+                <dd>A primeira linha vai criar a função principal, a segunda e a terceira vão identificar od ids, e a última vai criar a função de mover o elemento</dd>
+                <dt class="mono">function alterarEstilo(){
+                    var elemento = document.getElementById("mouse");
+                    elemento.style.backgroundColor = "Orange";
+                }</dt>
+                <dd>A primeira linha vai criar a função para alterar a cor, a segunda vai identificar a id, a terceira vai mudar a cor para laranja
+                </dd>
+                <dt class="mono">window.onload = function() {
+                    var elemento = document.getElementById("mouse");
+                    elemento.addEventListener("mouseover", alterarEstilo);
+                };</dt>
+                <dd>A primira linha vai renderizar qualquer conteúdo HTML, a segunda vai achar o id e a terceira vai adicionar o evento addEventListener, para mudar a cor</dd>
+                <dt class="mono">window.onload = function(){
+                    var botao = document.getElementById("meubotao");
+                    botao.disabled = true;
+                }</dt>
+                <dd>A primeira linha vai renderizar qualquer conteúdo HTML, a segunda vai identificar o id do botão e a terceira vai confirmar para desabilitar o botão</dd>
+                <dt class="mono">window.onload = function(){
+                    var elementopai = document.getElementById("meuelementopai");
+                    var numeroDeFilhos = elementopai.childElementCount;
+                    console.log("Número de elementos filhos:", numeroDeFilhos);
+                };</dt>
+                <dd>A primeira linha vai renderizar todo o conteúdo do HTML, a segunda vai identificar o id do elemento pai, a terceira vai contar o número de elementos filhos e a última vai exibir os números no console</dd>
+                <dt class="mono">window.onload = function(){
+                    var move = document.getElementById("move");
+                    var novo = document.getElementById("novo");
+                    novo.appendChild(move);
+                };</dt>
+                <dd>A primeira linha vai renderizar todo o conteúdo HTML, a segunda e a terceira vão identificar od ids e a última vai mover o elemento para o elemento pai</dd>
+                <dt class="mono">function adicionarLinha(){
+                    var tabela = document.getElementById("minhatabela");
+                    var novaLinha = tabela.insertRow();
+                    var cell1 = novaLinha.insertCell(0);
+                    var cell2 = novaLinha.insertCell(1);
+                    cell1.innerHTML = "Jane";
+                    cell2.innerHTML = "Doe";
+                }</dt>
+                <dd>A primeira linha vai criar a função de adicionar linhas, a segunda vai identificar o id e as três últimas linhas vão terminar a função de adicionar linhas com células</dd>
+                <dt class="mono">function cliqueHandler(){
+                    console.log("O botão foi clicado!");
+                }</dt>
+                <dd>A primeira linha vai criar uma função com o evento cliqueHandler, e quando eu clicar no botão vai aparecer no console a mensagem que está no código</dd>
+                <dt class="mono">var meubotao = document.getElementById("meubotao");
+                    meubotao.addEventListener("click", cliqueHandler);
+                    setTimeout(function(){
+                        meubotao.removeEventListener("click", cliqueHandler);
+                        console.log("Evento removido do botão.");
+                    }, 3000);</dt>
+                    <dd>A primeira linha vai identificar o id, a segunda vai colocar o evento, e as três últimas vão adicionar o tempo que o evento será removido e mostrar a mensagem que está no código no console</dd>
+                    <dt class="mono">var meuElemento = document.querySelector("#meuparagrafo");
+                        meuElemento.textContent = "Conteúdo novo que eu, Pedro fiz.";</dt>
+                        <dd>A primeira linha vai identificar o id da classe CSS  renderizá-la, e a linha de baixo vai servir para colocar conteúdo novo</dd>
+                        <dt class="mono">var paragrafos = document.getElementsByTagName("p");
+                            var numeroDeParagrafos = paragrafos.length;
+                            console.log("Número de elementos p:", numeroDeParagrafos);</dt>
+                            <dd>A primeira linha vai identicar todas as tags p, a segunda e a terceira vão renderizar o número de elementos p no console</dd>
+                            <dt class="mono">function alterarConteudo() {
+                                var opcaoSelecionada = document.getElementById("opcoes").value;
+                                var meudiv = document.getElementById("meudiv");
+                                switch (opcaoSelecionada){
+                                    case "opcao1":
+                                        meudiv.textContent = "Conteúdo da opção 1.";
+                                        break;
+                                        case "opcao2":
+                                            meudiv.textContent = "Conteúdo da opção 2.";
+                                            case "opcao3":
+                                                meudiv.textContent = "Conteúdo da opção 3.";
+                                                break;
+                                                default:
+                                                    meudiv.textContent = "Conteúdo padrão.";
+                                                    break;
+                                }
+                            }</dt>
+                            <dd>A primeira linha vai criar a função de alterar o conteúdo, a segunda e a terceira vão identificar o id, e as últimas linhas vão colocar conteúdo ao clicar nas opções</dd>
+                            <dt class="mono">function alterarEstilo(){
+                                var estiloSelecionado = document.getElementById("selecionarEstilo").value;
+                                var texto = document.getElementById("texto");
+                                switch(estiloSelecionado){
+                                    case "normal":
+                                    texto.style.fontWeight = "normal";
+                                    texto.style.fontStyle = "normal";
+                                    texto.style.textDecoration = "none";
+                                    break;
+                                    case "negrito":
+                                        texto.style.fontWeight = "bold";
+                                        break;
+                                        case "italico":
+                                            texto.style.fontStyle = "italic";
+                                            break;
+                                            case "sublinhado":
+                                                texto.style.textDecoration = "underline";
+                                                break;
+                                                default:
+                                                    break;
+                                }
+                            }</dt>
+                            <dd>A primeira linha vai criar a função de alterar os estilos do texto, a segunda vai identificar o id e obter um valor, a terceira vai identificar o id, a quarta vai 
+                                criar a função de alterar os estilos, switch é alterar em inglês, e o resto das linhas vai renderizar os estilos para funcionarem corretamente.
+                            </dd>
+                            <dt class="mono">
+                                function validarEmail(event) {
+                                    event.preventDefault();
+                                    var email = document.getElementById("email").value;
+                                    var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                    if (regexEmail.test(email)){
+                                        document.getElementById("formulario").submit();
+                                    } else {
+                                        document.getElementById("mensagemErro").style.display = "block";
+                                    }
+                                }</dt>
+                                <dd>A primeira linha cria uma função de validar o email, a sgunda serve para prevenir o envio padrão do formulário, a terceira vai achar o id
+                                    e obter um valor, a quarta vai usar a expressão acima que é muito estranha, mas vai servir para validar diferentes formatos de email, e o resto das linhas vão servir para oferecer avisos quando der certo e quando der erro
+                                </dd>
+                                <dt class="mono">function calcularSoma(event){
+                                    event.preventDefault();
+                                    var numero1 = parseFloat(document.getElementById("numero1").value);
+                                    var numero2 = parseFloat(document.getElementById("numero2").value);
+                                    if (!isNaN(numero1) && !isNaN(numero2)){
+                                        var soma = numero1 + numero2;
+                                        document.getElementById("resultado").innerText = "A soma é: " + soma;
+                                    } else {
+                                        document.getElementById("resultado").innerText = "Por favor, insira números válidos.";
+                                    }
+                                }</dt>
+                                <dd>A primeira linha cria a função de calcular a soma, a segunda previne que o formulário seja enviado de forma padrão, 
+                                    a terceira e quarta linha vão identificar o id e obter valores, já as últimas linhas vão renderizar as somas dos números
+                                </dd>
+                                <dt class="mono">function converterParaMaiusculas(){
+                                    var texto = document.getElementById("texto").value;
+                                    var textoEmMaiusculas = texto.toUpperCase();
+                                    document.getElementById("resultado").innerText = textoEmMaiusculas;
+                                }</dt>
+                                <dd>A primeira linha cria a função para converter o texto em maiúsculas, a segunda identifica o id e obtém um valor,
+                                    a terceira já tem a função pronta de converter o texto em maiúsculas e a última mostra o resultado da conversão
+                                </dd>
+                                <p style="font-size: 30px; font-style: italic;">Pedro Armiliato</p>
+    </dl>
+</body>
+</html>

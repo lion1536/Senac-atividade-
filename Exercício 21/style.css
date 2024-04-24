@@ -1,0 +1,6 @@
+#mouse {
+    width: 100px;
+    height: 200px;
+    background-color: green;
+    transition: 0,3s ease;
+}

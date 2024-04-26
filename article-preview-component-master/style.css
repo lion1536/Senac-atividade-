@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Sedan:ital@0;1&display=swap');
+body {
+    font-family: "Manrope", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDF2F8;
+}
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    border: 0px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 40px;
+    overflow: hidden;
+    width: 900px;
+    height: 350px; 
+}
+h1 {
+    font-size: 20px;
+    color: #545E6E;
+}
+.text {
+    color: #757F8B;
+}
+.text-1 {
+    color: #505564;
+}
+.text-2 {
+    color: #BDC2C9;
+}
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+#imagem {
+    transform: translate(-12px, -12px);
+}
+#data {
+    transform: translate(0px, -15px);
+}
+button {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0px;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    background-color: #CBCED3;
+}
+.conteudo {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #505564;
+    border-radius: 10px;
+    width: 240px;
+    height: 50px;
+    font-size: 14px;
+    letter-spacing: 5px;
+    gap: 15px;
+    font-family: "Manrope", sans-serif;
+    color: #8D9CB1;
+    position: absolute;
+    transform: translate(-50%, -105%)
+}
+@media only screen and (max-width: 600px){
+    .container {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: 750px;
+    }
+    .container-1{
+        padding: 20px;
+    }
+    .container-2{
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+}

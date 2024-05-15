@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    background-color: #C5E4E7;
+    font-family: "Space Mono";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    font-weight: 800;
+    color: #426567;
+}
+.texto{
+    color: #768888;
+}
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.botao-reset{
+    background-color: #26C2AD;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 30px;
+    padding: 10px;
+    color: #005F5B;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 50px;
+    transition: backgorund-color 0.5 ease;
+    transition: color 0.5 ease;
+}
+.botao-reset:hover{
+    background-color: #9FE8DF;
+    color: #004A4B;
+}
+.subtexto1{
+    color: white;
+}
+.subtexto2{
+    color: #679FA3;
+}
+.subtexto3{
+    color: #28C3AF;
+    font-size: 40px;
+}
+.botao-verde{
+    color: white;
+    background-color: #00474B;
+    border-radius: 3px;
+    border: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+}
+.botao-verde:hover{
+    background-color: #26C2AD;
+    color: #004A4B;
+}
+.tip-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    padding: 20px;
+    grid-gap: 10px;
+    border-radius: 20px;
+}
+.container-branco{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-verde{
+    display: flex;
+    background-color: #00474B;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+#valor-total{
+    cursor: pointer;
+    border: 2px #5EAAA0 solid;
+    background-image: url("./images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 10px;
+    padding: 10px;
+    width: 100%;
+}
+#numero-de-pessoas{
+    cursor: pointer;
+    border: 2px #B58271 solid;
+    background-image: url("./images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 10px;
+    padding: 10px;
+    width: 100%;
+}
+#value-people{
+    cursor: pointer;
+    border: 2px #5EAAA0 solid;
+    border-radius: 3px;
+    text-align: center;
+}

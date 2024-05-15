@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="title">Splitter</div>
+  <div class="container">
+    <div class="container-branco">
+      <div class="valor">
+        <p class="texto">Bill</p>
+        <input class="valor-total" id="valor-total">
+      </div>
+      <div class="gorjeta">
+        <p class="texto">Select Tip %</p>
+        <div class="tip-grid">
+          <button style="cursor: pointer;" class="botao-verde" onclick="porcentagem(5)">5%</button>
+          <button style="cursor: pointer;" class="botao-verde" onclick="porcentagem(10)">10%</button>
+          <button style="cursor: pointer;" class="botao-verde" onclick="porcentagem(15)">15%</button>
+          <button style="cursor: pointer;" class="botao-verde" onclick="porcentagem(25)">25%</button>
+          <button style="cursor: pointer;" class="botao-verde" onclick="porcentagem(50)">50%</button>
+          <input id="value-people" placeholder="Custom">
+        </div>
+      </div>
+      <div class="numero-pessoas">
+        <p class="texto">Number of People</p>
+        <input class="valor-total" id="numero-de-pessoas">
+      </div>
+    </div>
+    <div class="container-verde">
+      <div class="total" id="tip">
+        <div class="subtexto1">Tip Amount</div>
+        <div class="subtexto2">/ person</div>
+        <div class="subtexto3">$0.00</div>
+      </div>
+      <div class="total" id="total">
+        <div class="subtexto1">Total</div>
+        <div class="subtexto2">/ person</div>
+        <div class="subtexto3">$0.00</div>
+      </div>
+      <button style="cursor: pointer;" class="botao-reset" onclick="reset()">Reset</button>
+    </div>
+  </div> 
+</body>
+</html>
